@@ -1,0 +1,41 @@
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: #228be6;
+  --f7-theme-color-rgb: 34, 139, 230;
+  --f7-theme-color-shade: #1776c9;
+  --f7-theme-color-tint: #479eea;
+}
+
+/* Your app custom styles here */
+:root,
+:root.theme-dark,
+:root .theme-dark {
+  --f7-bars-bg-color: #228be69f;
+  --f7-bars-bg-color-rgb: var(--f7-theme-color-rgb);
+  --f7-bars-translucent-opacity: 0.6;
+  --f7-bars-text-color: #fff;
+  --f7-bars-link-color: #fff;
+  --f7-navbar-subtitle-text-color: rgba(255, 255, 255, 0.85);
+  --f7-bars-border-color: transparent;
+  --f7-tabbar-link-active-color: #fff;
+  --f7-tabbar-link-inactive-color: rgba(255, 255, 255, 0.54);
+  --f7-sheet-border-color: transparent;
+  --f7-tabbar-link-active-border-color: #fff;
+}
+
+.navbar-custom {
+  background: #228be69f;
+  margin-top: 0;
+  padding: 15px;
+}
+
+.navbar-row {
+  align-items: center;
+}
+
+.avatar-row {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+@import url("../components/navbar/navbar.style.less");
